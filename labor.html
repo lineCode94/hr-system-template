@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="E:\laborTracker\img\aaa.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/metisMenu.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+    <title>hr system</title>
+</head>
+
+<body>
+
+
+
+    <div class="content">
+        <div class="row first-child">
+            <div class="col-12">
+                <nav class="     navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                    <a class="navbar-brand" href="#">Hr System</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="btnu" id="btnHideSideBar" title="Close"></a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"> <i class="ion-navicon-round Hidden open" id="btnShowSideBar" onclick="ShowSideBar()" title="open"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Dropdown
+                                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="row secound-child">
+            <!-- START NAV BAR -->
+
+            <!-- END NAV BAR -->
+
+            <div class="col-3">
+
+                <!-- start sidebar -->
+                <div id="SideBar" data-simplebar class="sidebar    ">
+
+                    <div class="row ">
+                        <div class="tool-bar text-center float-l">
+
+                            <div class="title float-l">
+                                <span>Tool Bar</span>
+
+                            </div>
+
+                            <div class="buttonside float-l">
+                                <a class="btnu" id="btnHideSideBar" title="Close"></a>
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+
+                        <nav class="nav  fixed list">
+
+                            <ul class="metisFolder metismenu list-unstyled">
+                                <li class="item item-f" id="Root">
+                                    <a class="plus" href="#Root">
+                                        <span class="folder"></span> employee </a>
+
+                                    <ul class="list-unstyled sub-menu-one">
+                                        <!-- start two level ---------->
+
+                                        <li class="item" id="office">
+                                            <a class="plus" href="#office">
+                                            Folder office</a>
+
+                                            <ul class="list-unstyled sub-menu-two">
+                                                <li><a href="#"><i class="far fa-file-excel"></i>excel</a></li>
+                                                <li>
+                                                    <a href="#" <i class="far fa-file-word"></i>word</a>
+                                                </li>
+                                                <li><a href="#"><i class="far fa-file-powerpoint"></i>power point</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="item" id="media">
+                                            <a class="plus" href="#media">
+                                                <i class="far fa-file"></i> Folder media</a>
+
+                                            <ul class="list-unstyled sub-menu-two">
+
+                                                <!-- statr level three -->
+                                                <li>
+                                                    <a class="plus" href="#"><i class="far fa-file-excel"></i>Video</a>
+                                                    <ul class="list-unstyled sub-menu-three">
+
+
+                                                        <!-- start level four -->
+
+                                                        <li>
+                                                            <a class="plus" href="#"><i class="far fa-file-excel"></i>Video</a>
+                                                            <ul class="list-unstyled sub-menu-four">
+                                                                <li><a href="#"><i class="far fa-file-excel"></i>excel</a></li>
+                                                                <li>
+                                                                    <a href="#" <i class="far fa-file-word"></i>word</a>
+                                                                </li>
+                                                                <li><a href="#"><i class="far fa-file-powerpoint"></i>power point</a></li>
+                                                            </ul>
+
+
+                                                        </li>
+
+
+                                                        <!-- end level four -->
+                                                        <li><a href="#"><i class="far fa-file-excel"></i>excel</a></li>
+                                                        <li><a href="#"><i class="far fa-file-powerpoint"></i>power point</a></li>
+                                                    </ul>
+
+
+                                                </li>
+                                                <!-- end level three -->
+
+                                                <li>
+                                                    <a href="#" <i class="far fa-file-word"></i>Image</a>
+                                                </li>
+                                                <li><a href="#"><i class="far fa-file-powerpoint"></i>Audio</a></li>
+                                            </ul>
+                                        </li>
+
+
+                                        <!-- end two level -->
+
+
+                                        <li> <a href="#"><i class="far fa-file"></i>  File 1</a> </li>
+
+
+
+
+
+
+                                        <li><a href="#"><i class="far fa-file-word"></i>   File zip</a></li>
+                                        <li><a href="#"><i class="far fa-file-pdf"></i> File 2  </a> </li>
+                                        <li><a href="#"><i class="far fa-file-archive"></i> File PDF </a> </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </nav>
+
+                    </div>
+                    <!-- start secound root -->
+                    <div class="row   format">
+
+                        <nav class="nav    list">
+                            <ul class="metisFolder metismenu  list-unstyled">
+                                <li class="item" id="Root">
+
+                                    <a class="plus" href="#Root"> <span class="folder"></span> employee </a>
+
+                                    <ul class="list-unstyled sub-menu-one">
+                                        <!--  start two level ---------->
+
+                                        <li class="item" id="office">
+                                            <a class="plus" href="#office">
+                                All employee</a>
+
+                                            <ul class="list-unstyled sub-menu-two">
+                                                <li><a href="#"> holidays</a></li>
+                                                <li>
+                                                    <a href="#">Leave requests </a>
+                                                </li>
+                                                <li><a href="#"> Attendance</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="item" id="media">
+                                            <a class="plus" href="#media">
+                                                <i class="far fa-file"></i> Folder media</a>
+
+                                            <ul class="list-unstyled sub-menu-two">
+
+                                                <!-- statr level three -->
+                                                <li>
+                                                    <a class="plus" href="#"><i class="far fa-file-excel"></i>Video</a>
+                                                    <ul class="list-unstyled sub-menu-three">
+
+
+                                                        <!-- start level four -->
+
+                                                        <li>
+                                                            <a class="plus" href="#"><i class="far fa-file-excel"></i>Video</a>
+                                                            <ul class="list-unstyled sub-menu-four">
+                                                                <!-- start level five -->
+                                                        </li>
+                                                        <li><a href="#"><i class="far fa-file-excel"></i>imgg</a>
+
+                                                            <li>
+                                                                <a class="plus" href="#"><i class="far fa-file-excel"></i>end</a>
+                                                                <ul class="list-unstyled sub-menu-four">
+                                                                    <li><a href="#"> holidays</a></li>
+                                                                    <li>
+                                                                        <li><a href="#"> holidays</a></li>
+                                                                        <li>
+                                                                            <li><a href="#"> holidays</a></li>
+                                                                            <li>
+                                                                                <li><a href="#"> holidays</a></li>
+                                                                                <li>
+                                                                </ul>
+
+
+                                                                </li>
+
+
+
+                                                                <li>
+                                                                    <a href="#" <i class="far fa-file-word"></i>word</a>
+                                                                </li>
+                                                                <li><a href="#"><i class="far fa-file-powerpoint"></i>power point</a></li>
+                                                                </ul>
+
+
+                                                                </li>
+
+
+                                                                <!-- end level four -->
+                                                                <li><a href="#"><i class="far fa-file-excel"></i>excel</a></li>
+                                                                <li><a href="#"><i class="far fa-file-powerpoint"></i>power point</a></li>
+                                                    </ul>
+
+
+                                                    </li>
+                                                    <!-- end level three -->
+
+                                                    <li>
+                                                        <a href="#" <i class="far fa-file-word"></i>Image</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="far fa-file-powerpoint"></i>Audio</a></li>
+                                            </ul>
+                                            </li>
+
+
+                                            <!-- end two level -->
+
+
+                                            <li> <a href="#"><i class="far fa-file"></i>  File 1</a> </li>
+
+
+
+
+
+
+                                            <li><a href="#"><i class="far fa-file-word"></i>   File zip</a></li>
+                                            <li><a href="#"><i class="far fa-file-pdf"></i> File 2  </a> </li>
+                                            <li><a href="#"><i class="far fa-file-archive"></i> File PDF </a> </li>
+                                    </ul>
+                                    </li>
+
+
+                            </ul>
+                        </nav>
+
+
+                    </div>
+                    <!-- start 3 root -->
+
+                    <div class="row   format">
+
+                        <nav class="nav    list">
+                            <ul class="metisFolder metismenu  list-unstyled">
+                                <li class="item" id="Root">
+                                    <a class="plus" href="#Root"> <span class="folder"></span> employee 3233</a>
+
+                                    <ul class="list-unstyled animated bounce  sub-menu-one">
+                                        <!--  start two level ---------->
+
+                                        <li class="item bounceInRight " id="office">
+                                            <a class="plus" href="#office">
+                                        All employee</a>
+
+                                            <ul class="list-unstyled animated bounceInRight  sub-menu-two">
+                                                <li><a href="#"> holidays</a></li>
+                                                <li>
+                                                    <a href="#">Leave requests </a>
+                                                </li>
+                                                <li><a href="#"> Attendance</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="item" id="media">
+                                            <a class="plus" href="#media">
+                                                <i class="far fa-file"></i> Folder media</a>
+
+                                            <ul class="list-unstyled sub-menu-two">
+
+                                                <!-- statr level three -->
+                                                <li>
+                                                    <a class="plus" href="#"><i class="far fa-file-excel"></i>Video</a>
+                                                    <ul class="list-unstyled sub-menu-three">
+
+
+                                                        <!-- start level four -->
+
+                                                        <li>
+                                                            <a class="plus" href="#"><i class="far fa-file-excel"></i>Video</a>
+                                                            <ul class="list-unstyled sub-menu-four">
+                                                                <!-- start level five -->
+                                                        </li>
+                                                        <li><a href="#"><i class="far fa-file-excel"></i>imgg</a>
+
+                                                            <li>
+                                                                <a class="plus" href="#"><i class="far fa-file-excel"></i>end</a>
+                                                                <ul class="list-unstyled sub-menu-four">
+                                                                    <li><a href="#"> holidays</a></li>
+                                                                    <li>
+                                                                        <li><a href="#"> holidays</a></li>
+                                                                        <li>
+                                                                            <li><a href="#"> holidays</a></li>
+                                                                            <li>
+                                                                                <li><a href="#"> holidays</a></li>
+                                                                                <li>
+                                                                </ul>
+
+
+                                                                </li>
+
+
+
+                                                                <li>
+                                                                    <a href="#" <i class="far fa-file-word"></i>word</a>
+                                                                </li>
+                                                                <li><a href="#"><i class="far fa-file-powerpoint"></i>power point</a></li>
+                                                                </ul>
+
+
+                                                                </li>
+
+
+                                                                <!-- end level four -->
+                                                                <li><a href="#"><i class="far fa-file-excel"></i>excel</a></li>
+                                                                <li><a href="#"><i class="far fa-file-powerpoint"></i>power point</a></li>
+                                                    </ul>
+
+
+                                                    </li>
+                                                    <!-- end level three -->
+
+                                                    <li>
+                                                        <a href="#" <i class="far fa-file-word"></i>Image</a>
+                                                    </li>
+                                                    <li><a href="#"><i class="far fa-file-powerpoint"></i>Audio</a></li>
+                                            </ul>
+                                            </li>
+
+
+                                            <!-- end two level -->
+
+
+                                            <li> <a href="#"><i class="far fa-file"></i>  File 1</a> </li>
+
+
+
+
+
+
+                                            <li><a href="#"><i class="far fa-file-word"></i>   File zip</a></li>
+                                            <li><a href="#"><i class="far fa-file-pdf"></i> File 2  </a> </li>
+                                            <li><a href="#"><i class="far fa-file-archive"></i> File PDF </a> </li>
+                                    </ul>
+                                    </li>
+
+                            </ul>
+                        </nav>
+
+
+                    </div>
+                </div>
+                <!-- end sidebar -->
+
+
+            </div>
+
+
+            <div class="col-9">
+                <div class="main-content ">
+                    <div class="container">
+                        <div class="card card-design cardId">
+                            hello
+                            <!-- <div   id="cardId" style="height:500px">
+
+                </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- js files -->
+
+    <script src="js/jquery-3.4.1.min.js "></script>
+
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/custom.js "></script>
+    <script src="js/main.js"></script>
+    <script src="js/metisMenu.min.js "></script>
+    <script src="js/simplebar.min.js"></script>
+
+    <script type="text/javascript">
+        function HideSideBar() {
+            $("#tdSideBar").hide();
+            $("#btnHideSideBar").hide();
+            $("#btnShowSideBar").show();
+        }
+
+        function ShowSideBar() {
+            $("#SideBar").show();
+            $("#btnShowSideBar").hide();
+        }
+    </script>
+
+</body>
+
+</html>

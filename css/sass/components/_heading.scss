@@ -1,0 +1,25 @@
+ .heading-with-border {
+     position: relative;
+     h2 {
+         background: $redColor;
+         color: #fff;
+         text-align: center;
+         margin: 40px auto;
+         border-radius: 15px;
+         width: 400px;
+         padding: 10px 20px;
+         @media #{$maxMobile} {
+             width: 200px;
+         }
+         &::before {
+             content: '';
+             height: 1.5px;
+             width: 100%;
+             background: #ccc;
+             position: absolute;
+             left: 0;
+             top: 50%;
+             z-index: -1;
+         }
+     }
+ }

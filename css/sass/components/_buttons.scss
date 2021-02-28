@@ -1,0 +1,35 @@
+.main-button {
+    background: rgba($redColor, .8);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    min-width: 120px;
+    cursor: pointer;
+    border-radius: 5px;
+    @include prefixer(transition, .5s, webkit moz);
+    &:hover {
+        background: $redColor;
+    }
+}
+
+.toggler {
+    .fa-bars {
+        position: absolute;
+        left: 5px;
+        top: 0px;
+        font-size: 25px;
+        cursor: pointer;
+        display: none!important;
+        background: rgba($redColor, .8);
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 3px;
+        @media #{$maxMobile} {
+            display: block!important;
+        }
+        &:hover {
+            background: rgba($redColor, 1);
+        }
+    }
+}
