@@ -1,0 +1,19 @@
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  background: #212123;
+  color: #fff;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% auto;
+      grid-template-columns: 80% auto;
+}
+
+body main {
+  height: inherit;
+}
+/*# sourceMappingURL=scroll.css.map */
